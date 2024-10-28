@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu Narratif : Innoncent</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <h1>Bienvenue dans votre aventure</h1>
     </header>
+
+    <section id="statistiques">
+        <h2>Statistiques du joueur</h2>
+        <p>PV : <span id="pv">100</span></p>
+        <p>Force : <span id="force">10</span></p>
+        <p>Intelligence : <span id="intelligence">10</span></p>
+        <p>Mana : <span id="mana">60</span></p>
+    </section>
+
+    <section id="inventaireSection">
+        <h2>Inventaire</h2>
+        <ul id="inventaire"></ul>
+    </section>
+
     <section id="narration">
         <p id="texte">C'est ici que le texte de l'histoire apparaîtra</p>
     </section>
+
     <section id="choix">
         <button class="choix-btn" onclick="faireUnChoix(1)">Choix 1</button>
         <button class="choix-btn" onclick="faireUnChoix(2)">Choix 2</button>
     </section>
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
+    
 </body>
 </html>

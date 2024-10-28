@@ -1,0 +1,128 @@
+/* Styles de base pour la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #00ccff;
+}
+
+/* Section des statistiques */
+#statistiques {
+    width: 80%;
+    max-width: 600px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+#statistiques h2 {
+    font-size: 1.5em;
+    color: #00ccff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#statistiques p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+/* Section de l'inventaire */
+#inventaireSection {
+    width: 80%;
+    max-width: 600px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+#inventaireSection h2 {
+    font-size: 1.5em;
+    color: #00ccff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#inventaire {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#inventaire li {
+    background-color: #444;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #eee;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+#inventaire li:hover {
+    transform: scale(1.05);
+    background-color: #555;
+}
+
+/* Section de narration */
+#narration {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#texte {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Boutons de choix */
+#choix {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.choix-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #222;
+    background-color: #00ccff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choix-btn:hover {
+    background-color: #0099cc;
+}
